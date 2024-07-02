@@ -7,7 +7,7 @@ body {
 
 header {
     background-color: #0077cc;
-    color: white;
+    color: rgb(223, 198, 243);
     text-align: center;
     padding: 10px;
 }
@@ -21,23 +21,20 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#quiz {
-    text-align: center;
+button {
+    margin: 8px;
+    padding: 70px;
+    background-color: rgb(14, 63, 196);
+    color: white;
+    font-size: 18px;
 }
 
-#options {
-    list-style-type: none;
+ul#options {
+    margin: 0;
     padding: 0;
 }
 
-li  {
-    padding: 25px;
-    margin: 8px;
-    background-color: rgb(14, 63, 196);
-    color: white;
-}
-
-li:hover {
+button:hover {
     background-color: blue;
     cursor: pointer;
 }
@@ -49,6 +46,10 @@ li:hover {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
+}
+
+#quiz {
+    text-align: center;
 }
 
 #next-btn:hover, #restart-btn:hover {

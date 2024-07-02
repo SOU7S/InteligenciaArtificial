@@ -55,10 +55,10 @@ function showQuestion() {
     questionElement.textContent = question.question;
     optionsElement.innerHTML = '';
     question.options.forEach(option => {
-        const li = document.createElement('li');
-        li.textContent = option;
-        li.addEventListener('click', checkAnswer);
-        optionsElement.appendChild(li);
+        const button = document.createElement('button');
+        button.textContent = option;
+        button.addEventListener('click', checkAnswer);
+        optionsElement.appendChild(button);
     });
 }
 
