@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Você decide o futuro da IA</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a84022c447.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".title-contact").fadeIn("slow");
+        });
+    </script>
 </head>
 <body>
     <header>
-        <h1>Hidro Quiz</h1>
+        <h1 style="color: white; margin: 0;">Hidro Quiz</h1>
     </header>
     <main>
         <section id="quiz">
-            <p id="question">Pergunta aparecerá aqui</p>
+            <p id="question" style="font-size: 18px;">
+            </p>
             <ul id="options">
-                <!-- Opções de resposta aparecerão aqui -->
             </ul>
-            <button id="next-btn">Próxima Pergunta</button>
+            <button id="next-btn" style="width: 20%; margin-left: 690px;">Próxima Pergunta</button>
         </section>
         <section id="result" class="hidden">
-            <p id="score">Pontuação: <span id="score-value">0</span></p>
+            <h3><b>Mas afinal, o que a água tem a ver com a Inteligência Artificial?</b></h3>
+            <p>A água é um recurso essencial cuja gestão eficiente é crucial para a sustentabilidade e a qualidade de vida. A inteligência artificial oferece ferramentas avançadas para otimizar o uso da água, melhorar o tratamento e monitoramento, e antecipar eventos extremos. Ao integrar IA nas estratégias de gestão de recursos hídricos, podemos enfrentar desafios globais relacionados à água de maneira mais eficaz, garantindo que esse recurso vital esteja disponível para as gerações futuras.</p>
+            <p id="score" style="font-size: 18px;"><b>Pontuação: <span id="score-value">0</b></span></p>
+            <p><b>Agradeço pelo seu tempo, muito obrigado, espero que tenha aprendido algo sobre a IA e a questão hídrica!</b></p>
             <button id="restart-btn">Recomeçar</button>
         </section>
     </main>
-
+    <footer>
+        <h4 style="font-size: 16px;">Mateus Marcondes &copy; 2024 - Todos os direitos reservados</h4>
+        <div class="row contact row-first">
+            <div class="col-md-4">
+                <a href="https://github.com/souteus" class="github" target="_blank"><i class="fa-brands fa-github" style="margin-right:5px;"></i>Github</a>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
